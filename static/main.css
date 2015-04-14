@@ -1,0 +1,26 @@
+.top_ten_cont
+{
+
+}
+.top_ten_item
+{
+	list-style-type: none;
+	margin: 20px 0px;
+	border-bottom: 1px solid;
+	position: relative;
+}
+.item
+{
+	margin:0;
+}
+.item span
+{
+	font-weight: bold;
+}
+.index
+{
+	position: absolute;
+	left: -32px;
+	font-size: 20px;
+	top: 13px;
+}

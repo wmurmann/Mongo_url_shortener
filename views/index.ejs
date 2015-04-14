@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>URL Shortener</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+	
+<body>
+
+<h1>Url Shorterner</h1>
+<form>
+	<input id="url"/>
+	<input id="url_shortened"/>
+	<button id="submit">Submit</button>
+</form>
+<h1>Top Ten Most Visited Shortened Urls</h1>
+<ul id="top_ten_cont">
+	<% for(var i = 0; i < top_ten.length; i++) 	{%>
+
+		<li class="top_ten_item">
+			<div class="index">#<%=i+1%></div>
+			<p class="item"> <span>Origina url </span><a href=<%= top_ten[i].url %> ><%= top_ten[i].url %></a></p>
+			<p class="item"><span>Shortend url </span><a href=<%= top_ten[i].url_short %> ><%= top_ten[i].url_short %></a></p>
+			<p class="item"><span>Searched </span> <%= top_ten[i].searched %> times </p>
+		</li>
+	<%}%>
+</ul>
+
+
+
+
+  <script src="jquery/dist/jquery.js"></script>
+  <script src="jquery/dist/jquery.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
