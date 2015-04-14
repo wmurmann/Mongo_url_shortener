@@ -18,7 +18,7 @@ $( document ).ready(function() {
 				success: function (response)
 				{
 					console.log(response);
-					$('#url_shortened').val(response);
+					$('#url_shortened').val("http://localhost:1337/" + response);
 					getNewTopList();
 				},
 				error: function (response)
